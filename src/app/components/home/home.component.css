@@ -1,0 +1,63 @@
+.img-center {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-size: cover;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  transform: translate(-50%, -50%);
+}
+
+.img-grad{
+  background: linear-gradient(#004092, #020202, transparent), url("/src/assets/bg-masthead.jpg") no-repeat center;
+  background-size: cover;
+  box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
+
+}
+h1 {
+  font-size: 92px;
+  background: -webkit-linear-gradient(#0b00ee, rgba(249, 246, 255, 0.89));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.masthead {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../../../assets/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+
+.masthead h1 {
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.masthead h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+.grad {
+  background-image: linear-gradient(black, gray);
+}
+.about-section {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}

@@ -1,0 +1,9 @@
+.about-footer {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #454545 0%, rgba(174, 174, 174, 0.9) 75%, rgba(211, 211, 211, 0.8) 100%);
+}
+h1,b{
+  background: -webkit-linear-gradient(#fcf5fa, rgba(181, 179, 184, 0.89));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
