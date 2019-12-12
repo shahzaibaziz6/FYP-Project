@@ -20,6 +20,10 @@ import {StudentJoinGroupComponent} from './components/Student/student-join-group
 import {StudentNewFYPComponent} from './components/Student/student-new-fyp/student-new-fyp.component';
 import {StudentFYPSelectComponent} from './components/Student/student-fypselect/student-fypselect.component';
 import {StudentProfileComponent} from './components/Student/student-profile/student-profile.component';
+import {AdminSearchFYPComponent} from './components/AdminRole/admin-search-fyp/admin-search-fyp.component';
+import {AdminAddFYPComponent} from './components/AdminRole/admin-add-fyp/admin-add-fyp.component';
+import {FacultyFypAddComponent} from './components/Faculty/faculty-fyp-add/faculty-fyp-add.component';
+import {StudentNavDashboardComponent} from './components/Student/student-nav-dashboard/student-nav-dashboard.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -30,17 +34,23 @@ const routes: Routes = [
             children : [{path : 'profile', component : AdminAddStudentComponent},
             {path : 'admin-search-student', component : AdminSearchStudentComponent},
             {path : 'admin-search-faulty', component : AdminSearchFaultyComponent},
+            {path : '', component : AdminSearchFaultyComponent},
+            {path : 'admin-add-fyp', component : AdminAddFYPComponent},
+            {path : 'admin-search-fyp', component : AdminSearchFYPComponent},
             {path : 'admin-add-faulty', component : AdminAddFaultyComponent}]},
   {path : 'faculty-Dashboard', component : FaultyDashboardComponent,
-              children : [{path : 'faculty-enter-fyp', component : EnterFypComponent},
+              children : [{path : 'faculty-enter-fyp', component : FacultyFypAddComponent},
               {path : 'faculty-fyplist', component : FacultyFypListComponent},
+              {path : '', component : FacultyFypListComponent},
               {path : 'faculty-fyp-select-student', component : FacultyFypSelectStudentComponent},
               {path : 'faculty-dashboard-profile', component : FaultyDashboardComponent},
                 {path : 'faculty-student-reports', component : StudentReportComponent}]},
   {path : 'faculty-nav-dashboard', component : NavFacultyDashboardComponent},
+  {path : 'student-nav-dashboard', component : StudentNavDashboardComponent},
   {path : 'student-dashboard', component : StudentDashboardComponent,
               children : [
               {path: 'student-join-group', component: StudentJoinGroupComponent},
+              {path: 's', component: StudentJoinGroupComponent},
               {path: 'student-new-fyp', component: StudentNewFYPComponent},
               {path: 'student-select-fyp', component: StudentFYPSelectComponent},
               {path: 'student-profile', component: StudentProfileComponent}]},

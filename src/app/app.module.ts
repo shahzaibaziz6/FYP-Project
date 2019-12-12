@@ -30,6 +30,9 @@ import { StudentProfileComponent } from './components/Student/student-profile/st
 import { StudentNewFYPComponent } from './components/Student/student-new-fyp/student-new-fyp.component';
 import { AdminNavDashboardComponent } from './components/AdminRole/admin-nav-dashboard/admin-nav-dashboard.component';
 import { AdminNavDashboardlsComponent } from './components/AdminRole/admin-nav-dashboardls/admin-nav-dashboardls.component';
+import { AdminSearchFYPComponent } from './components/AdminRole/admin-search-fyp/admin-search-fyp.component';
+import { AdminAddFYPComponent } from './components/AdminRole/admin-add-fyp/admin-add-fyp.component';
+import { StudentNavDashboardComponent } from './components/Student/student-nav-dashboard/student-nav-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +64,9 @@ import { AdminNavDashboardlsComponent } from './components/AdminRole/admin-nav-d
     StudentNewFYPComponent,
     AdminNavDashboardComponent,
     AdminNavDashboardlsComponent,
+    AdminSearchFYPComponent,
+    AdminAddFYPComponent,
+    StudentNavDashboardComponent,
   ],
   imports: [
     BrowserModule,
